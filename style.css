@@ -28,6 +28,6 @@ body{
 label {
     padding: 8px;
 }
-ul#notstart ,#in-progress,#completed{
+ul li{
     list-style: none;
 }
