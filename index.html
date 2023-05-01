@@ -15,39 +15,41 @@
         <form action=" "id="form" style="display: none;">
         
           <label for="name">Task Name</label><br />
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" required/>
 <br>
           <label for="priority">priority</label><br>
-          <select name="" id="priority">
+          <select name="" id="priority"required>
             <option value="low">Low</option>
             <option value="med">Med</option>
             <option value="high">High</option>
           </select>
 <br>
           <label for="Status">Status</label><br/>
-          <select name="" id="Status">
+          <select name="" id="Status"required>
             <option value="Notstarted">Notstarted</option>
             <option value="In-progress">In-progress</option>
             <option value="Completed">Completed</option>
           </select>
           <br>
-          <button type="submit">Add Task to List</button>
+          <label for="due-Date"></label><br>
+          <input type="date" name=""required id="due-Date"><br>
+          <button type="submit"id="submit">Add Task to List</button>
           <button id="closeModal">x</button>
         </form>
         <!-- form end -->
       </div>
       <div class="list">
-        <div class="notstart">
+        <div >
           <label>Notstarted</label>
-          <ul></ul>
+          <ul id="notstart"></ul>
         </div>
-        <div class="in-progress">
+        <div>
           <label>In-progress</label>
-          <ul></ul>
+          <ul  id="in-progress"></ul>
         </div>
-        <div class="completed">
+        <div >
           <label>Completed</label>
-          <ul></ul>
+          <ul id="completed"></ul>
         </div>
       </div>
     </div>
